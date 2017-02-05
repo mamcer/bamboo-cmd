@@ -28,7 +28,7 @@ Where `[folder-path]` is the root path to start the scan looking for test assemb
 
 ## open-cover-mstest.cmd
 
-Uses Open Cover and MSTest to run a code coverage analysis. From a given starting folder it recursively scan for test assemblies and executes a code coverage analysis over them.
+Uses [Open Cover](https://github.com/OpenCover/opencover) and MSTest to run a code coverage analysis. From a given starting folder it recursively scan for test assemblies and executes a code coverage analysis over them.
 
 ### Example  
 
