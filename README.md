@@ -1,12 +1,14 @@
-# Bamboo CMD files
+# Continuous Integration cmd files
 
-This repo containts different `.cmd` and `.proj` files that I have created to help simplify and avoid repetitive tasks in my Bamboo .NET plans configuration.
+## Description
 
-All this files were configured to run as a task in Bamboo. [I wrote a blog post explaining my configuratio](https://mamcer.github.io/2017-02-04-bamboo-cmd-tools/). 
+This repo containts different `.cmd` and `.proj` files that I have created to help simplify and avoid repetitive tasks in my Continuous Integration .NET plan configurations.
 
-They can also be easily tweaked to run locally as part of your development process for example.
+All this files were configured to run as a task in Bamboo (for example). [I wrote a blog post explaining my configuration](https://mamcer.github.io/2017-02-04-bamboo-cmd-tools/). 
 
-You can edit and change all the default paths. By default the folders are:
+They can also be easily tweaked to run locally as part of your development process: [atm-fun](https://github.com/mamcer/atm-fun).
+
+You can edit and change all the folder paths to match your local configuration. By default the folders are:
 
 Copy all the files in a `C:\root\bin\cmd\` folder. 
 
@@ -24,7 +26,7 @@ It only needs one parameter `[folder-path]`
 
     vstest-console.cmd [folder-path]
 
-Where `[folder-path]` is the root path to start the scan looking for test assemblies. 
+Where `[folder-path]` is the root path. From there it will recursively start looking for test assemblies. 
 
 ## open-cover-mstest.cmd
 
@@ -46,4 +48,5 @@ Uses [Report Generator](http://danielpalme.github.io/ReportGenerator/) to genera
 
     report-generator.cmd
 
-It doesn't need any parameter. Assumes an `open-cover.xml` file at the same path level and produces as output a `coverage-report` folder with the html report at the same path level of the script. 
+It doesn't need a parameter. Assumes an `open-cover.xml` file at the same path level and produces as output a `coverage-report` folder with the html report at the same path level of the script. 
+
