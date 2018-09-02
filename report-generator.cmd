@@ -4,7 +4,7 @@ SETLOCAL
 @REM  ----------------------------------------------------------------------------
 @REM  report-generator.cmd
 @REM
-@REM  author: Mario Moreno (@mamcer)
+@REM  author: m4mc3r@gmail.com
 @REM
 @REM  ----------------------------------------------------------------------------
 

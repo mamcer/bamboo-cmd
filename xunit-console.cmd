@@ -4,7 +4,7 @@ SETLOCAL
 @REM  ----------------------------------------------------------------------------
 @REM  xunit-console.cmd
 @REM
-@REM  author: Mario Moreno (@mamcer)
+@REM  author: m4mc3r@gmail.com
 @REM  ----------------------------------------------------------------------------
 
 set start_time=%time%
